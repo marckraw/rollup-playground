@@ -1,4 +1,7 @@
 import replace from "rollup-plugin-replace";
+import rimraf from "rimraf";
+
+rimraf.sync("dist");
 
 const pkg = require("./package.json");
 const { version } = pkg;
@@ -11,7 +14,7 @@ export default {
     },
     plugins: [
         replace({
-            delimiters: ["{{", "}}"],
+            delimiters: ["version{{", "}}"],
             version
         })
     ]

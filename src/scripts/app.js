@@ -1,3 +1,3 @@
-import { foo } from './foo';
+import { foo } from "./foo";
 
-console.log(`hello from {{version}} ${foo()}`);
+console.log(`hello from version{{version}} ${foo()}`);
