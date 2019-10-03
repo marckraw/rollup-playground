@@ -1,1 +1,1 @@
-# rollup-playground
+>Simple rollup setup
